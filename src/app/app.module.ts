@@ -20,6 +20,7 @@ import { DataService } from './services/data.service';
 import { AuthService } from './services/auth.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { ToastrModule } from 'ngx-toastr';
+import { ProfilePageComponent } from './pages/account/profile-page/profile-page.component';
 
 
 
@@ -36,7 +37,8 @@ import { ToastrModule } from 'ngx-toastr';
     CartPageComponent,
     FramePageComponent,
     ProductCardComponent,
-    LoadingComponent
+    LoadingComponent,
+    ProfilePageComponent
   ],
   imports: [
     BrowserModule,
