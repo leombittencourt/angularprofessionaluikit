@@ -18,6 +18,8 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
 import { MaskDirective } from './directives/mask.directive';
 import { DataService } from './services/data.service';
 import { AuthService } from './services/auth.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { ToastrModule } from 'ngx-toastr';
 
 
 
@@ -40,7 +42,9 @@ import { AuthService } from './services/auth.service';
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [DataService, AuthService],
   bootstrap: [AppComponent]
